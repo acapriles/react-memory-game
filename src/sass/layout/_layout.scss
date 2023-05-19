@@ -1,0 +1,65 @@
+@use  '../abstracts/variables';
+@use  '../abstracts/mixins';
+
+.layout-container {
+    @include mixins.create-flexbox(flex-start, center, column, nowrap);
+    background-color: variables.$color-background;
+
+    header {
+        @include mixins.create-flexbox(center, center, column, nowrap);
+
+        .header-img {
+            width: 100%;
+            max-width: 519.69px;
+            height: auto;
+            margin-top: 24px;
+        }
+
+        .header-title {
+            background-color: variables.$color-primary-dark;
+            padding: 8px 16px;
+            width: 229px;
+            border-radius: 25px;
+            text-align: center;
+        }
+    }
+}
+
+.header-title-text {
+    font-weight: variables.$font-weight-700;
+    font-size: variables.$font-size-20;
+    line-height: variables.$line-height-24;
+}
+
+main {
+    padding: 36px 72px;
+    
+    width: 100%;
+    max-width: 1040px;
+    min-height: 100vh;
+
+    background: variables.$color-primary-light;
+    border-radius: 16px 16px 0px 0px;
+
+    margin-top: 32px;
+
+    /* @media only screen and (max-width: 600px) {
+        width: 100%;
+    }
+
+    @media only screen and (min-width: 600px) {
+        width: 500px;
+    }
+
+    @media only screen and (min-width: 768px) {
+        width: 700px;
+    }
+
+    @media only screen and (min-width: 992px) {
+        width: 900px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        width: 1040px;
+    } */
+}

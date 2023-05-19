@@ -1,0 +1,23 @@
+@use  '../abstracts/variables';
+@use  '../abstracts/mixins';
+
+
+.loader-container {
+    @include mixins.create-flexbox(center, center, column);
+    font-size: variables.$font-size-16;
+
+    .loader {
+        border: 8px solid variables.$color-primary-dark;
+        border-top: 8px solid variables.$color-button-blue;
+        border-radius: 50%;
+        width: 75px;
+        height: 75px;
+        animation: spin 2s linear infinite;
+    }
+
+    @keyframes spin {
+        0%  { transform: rotate( 0deg ); }
+        100% { transform: rotate( 360deg ); }
+    }
+}
+  

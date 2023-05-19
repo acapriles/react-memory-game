@@ -1,0 +1,28 @@
+@use  '../abstracts/variables';
+@use  '../abstracts/mixins';
+
+
+section.final-container {
+    @include mixins.create-flexbox(flex-start, normal, column);
+
+    margin: auto 148px;
+
+    .final-title {
+        font-weight: variables.$font-weight-700;
+        font-size: variables.$font-size-48;
+        line-height: variables.$line-height-59;
+        color: variables.$color-blue-text;
+        margin-bottom: 16px;
+    }
+
+    .final-subtitle {
+        font-weight: variables.$font-weight-500;
+        font-size: variables.$font-size-24;
+        line-height: variables.$line-height-29;
+        color: variables.$color-black;
+        margin-bottom: 72px;
+    }
+}
+
+// 240 - 92
+// 56

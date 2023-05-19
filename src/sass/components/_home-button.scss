@@ -1,0 +1,35 @@
+@use  '../abstracts/variables';
+@use  '../abstracts/mixins';
+
+
+section.home-button-container {
+    display: flex;
+    justify-content: center;
+
+    .home-button-play {
+        @include mixins.create-flexbox(center, flex-start, row, wrap);
+    
+        padding: 12px 80px;
+    
+        background: variables.$color-button-blue;
+        border-width: 0px 0px 4px 4px;
+        border-style: solid;
+        border-color: variables.$color-primary-dark;
+        box-shadow: -1px 1px 4px rgba(0, 0, 0, 0.2);
+        border-radius: 8px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        .home-button-text {
+            font-weight: variables.$font-weight-600;
+            font-size: variables.$font-size-24;
+            line-height: variables.$line-height-29;
+            text-align: center;
+            letter-spacing: 0.1em;
+
+            color: variables.$color-blue-text;
+        }
+    }
+}
