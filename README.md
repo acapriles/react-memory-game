@@ -6,7 +6,7 @@ Este proyecto es el resultado de un recto aboral. 
 
 ### Demo e instalación:
 
-[Demo online](https://6467fb2aa4054b2565b3cd28--aesthetic-melomakarona-d6c8ec.netlify.app/home)
+[Demo online](https://6467fb2aa4054b2565b3cd28--aesthetic-melomakarona-d6c8ec.netlify.app)
 
 ```plaintext
 cd nombre_proyecto
